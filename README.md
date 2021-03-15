@@ -69,18 +69,15 @@
 
 The data source used was cBioPortal for cancer genomics (3). This is an open source repository for cancer genomes, including the associated clinical data comprising of 303 studies, spanning 869 cancers and nearly 120,000 samples. The data was collected using an API and filtered for features with at least 2000 samples attributed to them. Once cleaned the dataset consisted of 129 features and nearly 85,000 samples.
 
+Project contents:
+
+Notebook1 - data collection[1_capstone_notebook_data_collection.ipynb]
+
 #### References
 (1) https://www.cancerresearchuk.org/health-professional/cancer-statistics-for-the-uk
-
 (2) https://www.who.int/news-room/fact-sheets/detail/cancer
-
 (3) https://www.cbioportal.org/
 
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
 
 
 <!-- CONTACT -->
