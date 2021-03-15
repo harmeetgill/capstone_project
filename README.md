@@ -42,26 +42,6 @@
 </p>
 
 
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-      </ul>
-    </li>
-    <li>
-      <ul>
-      </ul>
-    </li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -69,21 +49,30 @@
 
 The data source used was cBioPortal for cancer genomics (3). This is an open source repository for cancer genomes, including the associated clinical data comprising of 303 studies, spanning 869 cancers and nearly 120,000 samples. The data was collected using an API and filtered for features with at least 2000 samples attributed to them. Once cleaned the dataset consisted of 129 features and nearly 85,000 samples.
 
-Project contents:
-
-Notebook1 - data collection[1_capstone_notebook_data_collection.ipynb]
+### Project contents:
+<ul>
+  <li>Data collection : 1_capstone_notebook_data_collection.ipynb</li>
+<li>EDA: 2_capstone_notebook_cleaning_EDA.ipynb</li>
+<li>Modelling 1: 3_capstone_notebook_logistic_regression.ipynb</li>
+<li>Modelling 2: 4_capstone_notebook_modelling_decision_tree.ipynb</li>
+<li>Modelling 3: 5_capstone_notebook_modelling_random_forest.ipynb</li>
+</ul>
 
 #### References
 (1) https://www.cancerresearchuk.org/health-professional/cancer-statistics-for-the-uk
+<br>
 (2) https://www.who.int/news-room/fact-sheets/detail/cancer
+<br>
 (3) https://www.cbioportal.org/
 
+Project Link: [https://github.com/harmeetgill/capstone_project (https://github.com/harmeetgill/capstone_project)
 
 
 <!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/harmeetgill/capstone_project (https://github.com/harmeetgill/capstone_project)
+LinkedIn: https://linkedin.com/in/harmeetgill28/ 
+
 
 
 
