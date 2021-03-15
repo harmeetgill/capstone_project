@@ -31,7 +31,7 @@
     <img src="https://camo.githubusercontent.com/7818eb78e231aedb0e98e27cf1335f1c3093a4c5a5aa7264c355e6b66f255888/687474703a2f2f696d6775722e636f6d2f315a63527972632e706e67" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">The prediction of cancer types based on genomic and clinical features</h3>
+  <h3 align="center">Prediction of cancer types based on genomic and clinical features</h3>
 
   <p align="center">In the UK, between 2015 and 2017, there were 357,000 new cases of cancer, which is roughly 1,000 new cases a day (1). In 2018, worldwide there were an estimated 9.6 million deaths associated with cancer (2). Access to clinical data associated with cancer patients presents its own set of challenges, for example, manual data entry and lack of real-time access. Therefore, with this project I wanted to determine whether I could use an open data source for clinical features associated with cancer diagnoses and treatment, as well as genomic data to predict the cancer type.
     <br />
