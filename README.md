@@ -51,7 +51,7 @@ The data source used was cBioPortal for cancer genomics (3). This is an open sou
 
 ### Project contents:
 <ul>
-  <li>####Data collection: 1_capstone_notebook_data_collection.ipynb</li>
+  <li>Data collection: 1_capstone_notebook_data_collection.ipynb</li>
 <li>EDA: 2_capstone_notebook_cleaning_EDA.ipynb</li>
 <li>Modelling 1: 3_capstone_notebook_logistic_regression.ipynb</li>
 <li>Modelling 2: 4_capstone_notebook_modelling_decision_tree.ipynb</li>
