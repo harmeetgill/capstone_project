@@ -66,10 +66,6 @@
 ## About The Project
 
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
-
 
 The data source used was cBioPortal for cancer genomics (3). This is an open source repository for cancer genomes, including the associated clinical data comprising of 303 studies, spanning 869 cancers and nearly 120,000 samples. The data was collected using an API and filtered for features with at least 2000 samples attributed to them. Once cleaned the dataset consisted of 129 features and nearly 85,000 samples.
 
