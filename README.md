@@ -65,7 +65,7 @@ The data source used was cBioPortal for cancer genomics (3). This is an open sou
 <br>
 (3) https://www.cbioportal.org/
 
-Project Link: [https://github.com/harmeetgill/capstone_project] (https://github.com/harmeetgill/capstone_project)
+Project Link: [https://github.com/harmeetgill/capstone_project](https://github.com/harmeetgill/capstone_project)
 
 
 <!-- CONTACT -->
