@@ -73,13 +73,16 @@ This project was a preliminary investigation into the prediction of cancer types
 One of the limitations of this dataset is that there is limited data available for some of the cancer types resulting in an imbalance between the classes. This is perhaps reflected in the confusion matrices where some cancers are incorrectly predicted as breast. This may be explained by the abundance of breast cancer samples available in this dataset, compared with other cancers. Secondly, there is an inherent bias in feature reporting for solid and non-solid tumours. For example, it is not possible to report tumour size for a non-solid tumour. Therefore, such limitations should be addressed in future work.
 
 ### Project contents:
-<ul>
-  <li><strong>Data collection</strong><br> [1_capstone_notebook_data_collection.ipynb]</li>(https://github.com/harmeetgill/capstone_project/blob/main/1_capstone_notebook_data_collection.ipynb) </li>
-<li><strong>EDA</strong><br> [2_capstone_notebook_cleaning_EDA.ipynb]</li>(https://github.com/harmeetgill/capstone_project/blob/main/2_capstone_notebook_cleaning_EDA.ipynb)</li>
-<li><strong>Modelling 1</strong><br> [3_capstone_notebook_logistic_regression.ipynb]</li>(https://github.com/harmeetgill/capstone_project/blob/main/3_capstone_notebook_logistic_regression.ipynb)</li>
-<li><strong>Modelling 2</strong><br> [4_capstone_notebook_modelling_decision_tree.ipynb]</li>(https://github.com/harmeetgill/capstone_project/blob/main/4_capstone_notebook_modelling_decision_tree.ipynb)</li>
-<li><strong>Modelling 3</strong><br> [5_capstone_notebook_modelling_random_forest.ipynb]</li>(https://github.com/harmeetgill/capstone_project/blob/main/5_capstone_notebook_modelling_random_forest.ipynb)</li>
-</ul></li>
+**Data collection**<br>
+[1_capstone_notebook_data_collection](https://github.com/harmeetgill/capstone_project/blob/main/1_capstone_notebook_data_collection.ipynb)
+
+**EDA**<br>
+[2_capstone_notebook_cleaning_EDA.ipynb](https://github.com/harmeetgill/capstone_project/blob/main/2_capstone_notebook_cleaning_EDA.ipynb)
+
+**Modelling**<br> 
+[3_capstone_notebook_logistic_regression.ipynb](https://github.com/harmeetgill/capstone_project/blob/main/3_capstone_notebook_logistic_regression.ipynb)<br>
+[4_capstone_notebook_modelling_decision_tree.ipynb](https://github.com/harmeetgill/capstone_project/blob/main/4_capstone_notebook_modelling_decision_tree.ipynb)<br>
+[5_capstone_notebook_modelling_random_forest.ipynb](https://github.com/harmeetgill/capstone_project/blob/main/5_capstone_notebook_modelling_random_forest.ipynb)<br>
 
 #### References
 (1) https://www.cancerresearchuk.org/health-professional/cancer-statistics-for-the-uk
