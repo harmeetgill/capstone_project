@@ -50,26 +50,34 @@
 The data source used was cBioPortal for cancer genomics (3). This is an open source repository for cancer genomes, including the associated clinical data comprising of 303 studies, spanning 869 cancers and nearly 120,000 samples. The data was collected using an API and filtered for features with at least 2000 samples attributed to them. Once cleaned the dataset consisted of 163 cancers, 129 features and nearly 85,000 samples.
 
 ### EDA
-The 163 cancers were consolidated into 18 groups to maximise the predictive of the classfication models. EDA revealed genomic insights such as lymphomas/leukemias and cancers related to the cardiovascular and immine sustems to contain one of the lowest incidence of copy number alterations, indicating a lower level of genomic instability. However, frequency of mutation counrs in lymphomas/leukemias was higher, while cancers of the digestive system displayed the opposite pattern.
+The 163 cancers were consolidated into 18 groups to maximise the predictive of the classfication models. EDA revealed genomic insights such as lymphomas/leukemias and cancers related to the cardiovascular and immine sustems to contain one of the lowest incidence of copy number alterations, indicating a lower level of genomic instability. However, frequency of mutation counts in lymphomas/leukemias was higher, while cancers of the digestive system displayed the opposite pattern.
 
 Clinical insights include similarities between the average age of cancer patients of different races in for example, prostate and lung cancers. Large differences lies in the age of different races of adrenal, breast and liver cancer patients.
 
 ### Modelling and key findings
-Models used for this project include logistic regreassion, decision tree classifier and random forest. The baseline score was 0.13. Logistic regression acheived a mean cross-validation score of 0.62 and test score 0f 0.62. In terms of the f1-scores, leukemia/lymphoma-related cancers displayed a score of 0.76, while the bone cancers scored the worst (0.5). The f1-score for adrenal cancers was 0.65 despite the support number being the lowest (train:test - 285:71).
+Models used for this project include logistic regreassion, decision tree classifier and random forest. 
+**Logistic regression**<br>
+The baseline score was 0.13. Logistic regression achieved a mean cross-validation (cv) score of 0.62 and test score 0f 0.62. In terms of the F1-scores, leukemia/lymphoma-related cancers displayed a score of 0.76, while the bone cancers scored the worst (0.5). The F1-score for adrenal cancers was 0.65 despite the support number being the lowest (train:test - 285:71). Supporting earlier EDA, leukaemias and lymphomas are negatively correlated with fraction genome altered. In addition, agreeing with clincial diagnostics, the direction of correlation of different tumour grades with cancer class prediction reflect tumour progression or lack of progression.
+
+**Decision tree classifier (DTC)**<br>
+This model acheived a mean cv score of 0.62 and test score of 0.63.  F1-score for leukemias/lymphomas was 0.79, while bone cancer had a score of 0.3. Therefore, the DTC largely agrees with the logisitic regression model. Perhaps unsurprisingly, the most important features highlighted by the DTC was fraction genome altered and mutation count.
+
+**Random forest**<br>
+This model, similarly to DTC, achieved a mean cv score of 0.62 and test score of 0.63. Therefore, only marginally better than the logisitic regression model, however F1-score for leukemias/lymphomas was 0.79, while bone cancer had a score of 0.3. Therefore, the DTC largely agrees with the logisitic regression model. Perhaps unsurprisingly, the most important features highlighted by the DTC was fraction genome altered and mutation count.
 
 ### Conclusion
-This project was a preliminary investigation into the prediction of cancer types using clinical and genomic features. The models utilised here have successfully predicted cancer types 50% above the baseline score. The best performing model were the single decision tree and random forest models.
+This project was a preliminary investigation into the prediction of cancer types using clinical and genomic features. The models utilised here have successfully predicted cancer types 50% above the baseline score. The best performing model were the single decision tree and random forest models. Features highlighted by each model point to copy number alterations being of less importance in cancers such as leukaemias and lymphomas, which is supported by known literature by [Buccitelli et al](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5378169/#:~:text=Chromosome%20instability%20(CIN)%20is%20a,genomic%20stability%20(Sheltzer%202013).).
 
 ### Limitations and future work
-One of the limitations of this dataset is that there is limited data available for some of the cancer types resulting in an imbalance between the classes. Secondly, there is an inherent bias in feature reporting for solid and non-solid tumours. For example, it is not possible to report tumour size for a non-solid tumour. Therefore, such limitations should be addressed in future work.
+One of the limitations of this dataset is that there is limited data available for some of the cancer types resulting in an imbalance between the classes. This is perhaps reflected in the confusion matrices where some cancers are incorrectly predicted as breast. This may be explained by the abundance of breast cancer samples available in this dataset, compared with other cancers. Secondly, there is an inherent bias in feature reporting for solid and non-solid tumours. For example, it is not possible to report tumour size for a non-solid tumour. Therefore, such limitations should be addressed in future work.
 
 ### Project contents:
 <ul>
-  <li><strong>Data collection</strong>: [1_capstone_notebook_data_collection.ipynb](https://github.com/harmeetgill/capstone_project/blob/main/1_capstone_notebook_data_collection.ipynb)</li>
-<li><strong>EDA</strong>: 2_capstone_notebook_cleaning_EDA.ipynb</li>
-<li><strong>Modelling 1</strong>: 3_capstone_notebook_logistic_regression.ipynb</li>
-<li><strong>Modelling 2</strong>: 4_capstone_notebook_modelling_decision_tree.ipynb</li>
-<li><strong>Modelling 3</strong>: 5_capstone_notebook_modelling_random_forest.ipynb</li>
+  <li><strong>Data collection</strong><br> [1_capstone_notebook_data_collection.ipynb]</li>(https://github.com/harmeetgill/capstone_project/blob/main/1_capstone_notebook_data_collection.ipynb) </li>
+<li><strong>EDA</strong><br> [2_capstone_notebook_cleaning_EDA.ipynb]</li>
+<li><strong>Modelling 1</strong><br> 3_capstone_notebook_logistic_regression.ipynb</li>
+<li><strong>Modelling 2</strong><br> 4_capstone_notebook_modelling_decision_tree.ipynb</li>
+<li><strong>Modelling 3</strong><br> 5_capstone_notebook_modelling_random_forest.ipynb</li>
 </ul>
 
 #### References
